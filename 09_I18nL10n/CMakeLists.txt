@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 project(guess)
+add_subdirectory(locale)
 
 add_executable(guess main.c)
 

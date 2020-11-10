@@ -6,7 +6,7 @@
 #include <locale.h>
 
 #define ___(STRING) (gettext(STRING))
-#define LOCALEPATH "./ru/"
+#define LOCALEPATH "."
 
 #define RANGE	100u
 #define BUFFER	32
