@@ -1,0 +1,3 @@
+/Users/paulkhomich/Documents/LinuxDev2020/09_I18nL10n/build/CMakeFiles/rebuild_cache.dir
+/Users/paulkhomich/Documents/LinuxDev2020/09_I18nL10n/build/CMakeFiles/edit_cache.dir
+/Users/paulkhomich/Documents/LinuxDev2020/09_I18nL10n/build/CMakeFiles/guess.dir
