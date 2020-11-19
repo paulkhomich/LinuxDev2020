@@ -1,3 +1,8 @@
+/** @file roman.h
+ * Roman numbers table
+ */
+
+/** Array for decimal to roman conversion */
 char* d2r[101] = {
 	"0",
 	"I",
