@@ -1,0 +1,10 @@
+/// @mainpage
+# @PROJECT_NAME@ v. @PROJECT_VERSION@
+
+## Intro
+
+This is *free* and *useful* number guesing app!
+
+## Source
+
+See main module in `main.c`

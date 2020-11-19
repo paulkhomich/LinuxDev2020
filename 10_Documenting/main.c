@@ -11,7 +11,6 @@
 #include <locale.h>
 
 #include "roman.h"
-
 /** gettext() wrapper */
 #define ___(STRING) (gettext(STRING))
 /** Path to search locale files */
@@ -20,6 +19,15 @@
 #define RANGE	100u
 /** Answer buffer size */
 #define BUFFER	32
+/** Help hint */
+#define GUESS_HELP ___("\
+Guess-the-number program guess your number in decimal or roman numbers\n\
+\n\
+Usage: guess [OPTIONS]\n\
+\n\
+\t--help\t\tprint this help\n\
+\t-r\t\tenter in roman-number mode\n\
+")
 
 /**
  * Translate decimal @p d to roman
@@ -54,6 +62,8 @@ int main(int argc, char* argv[argc]) {
 	for (size_t i = 0 ; i < argc; ++i) {
 		if (!strcmp(argv[i], "-r"))
 			ROMANMODE = 1;
+		else if (!strcmp(argv[i], "--help"))
+			return !printf("%s\n", GUESS_HELP);
 	}
 
 
@@ -77,7 +87,6 @@ int main(int argc, char* argv[argc]) {
 			printf(___("Is your number greater than %d?: "), (guess + (i/=2)));
 		scanf("%s", ans);
 		if (!strcmp(ans, ___("Yes"))  || 
-			!strcmp(ans, ___("yes"))  || 
 			!strcmp(ans, ___("+"))    ||
 			!strcmp(ans, ___("y"))	  ||	
 			!strcmp(ans, ___("True")) || 
